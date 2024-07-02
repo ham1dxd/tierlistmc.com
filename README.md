@@ -1,1 +1,1 @@
-# mctierlist.com
+# tierlistmc.com
