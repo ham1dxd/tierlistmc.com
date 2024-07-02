@@ -1,1 +1,1 @@
-# ham1dxd.github.io
+# tierlistmc.com
