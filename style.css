@@ -46,6 +46,7 @@ body {
 .search {
     height: 5vmin;
     align-self: center;
+    display: flex;
     background-color: #343434;
     width: 25vmin;
     border-radius: 50vmin;
