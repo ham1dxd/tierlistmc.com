@@ -12,13 +12,60 @@ const uhcTier = document.querySelector("#uhctext");
 const smpTier = document.querySelector("#smptext");
 const playerid = document.querySelector(".playerid");
 const searchInput = document.querySelector("#search");
+const firstbox = document.getElementById("1stbox");
+const secondbox = document.getElementById("2ndbox");
+const thirdbox = document.getElementById("3rdbox");
+const fourthbox = document.getElementById("4thbox");
+const fifthbox = document.getElementById("5thbox");
 
-const displayPlayerDetails = (playerName) => {
+const displayPlayerDetails = (playerName, playerElement) => {
     firstskill.style.display = "flex";
     container.style.opacity = "40%";
     firstskill.style.zIndex = '1001';
     container.style.position = "fixed";
-    nethTier.innerText = "HT1";
+    const playerBackgroundColor = getComputedStyle(playerElement).backgroundColor;
+
+//        First Box
+
+    if (playerElement.parentElement === firstbox && playerBackgroundColor === `rgb(62, 113, 244)`) {
+        nethTier.innerText = "HT1";
+    } else if(playerElement.parentElement === firstbox && playerBackgroundColor === `rgb(135, 206, 250)`){
+        nethTier.innerText = "LT1";
+    }
+
+//        Second Box
+
+    if (playerElement.parentElement === secondbox && playerBackgroundColor === `rgb(62, 113, 244)`) {
+        nethTier.innerText = "HT2";
+    } else if(playerElement.parentElement === secondbox && playerBackgroundColor === `rgb(135, 206, 250)`){
+        nethTier.innerText = "LT2";
+    }
+
+//       Third Box 
+
+    if (playerElement.parentElement === thirdbox && playerBackgroundColor === `rgb(62, 113, 244)`) {
+        nethTier.innerText = "HT3";
+    } else if(playerElement.parentElement === thirdbox && playerBackgroundColor === `rgb(135, 206, 250)`){
+        nethTier.innerText = "LT3";
+    }
+
+//       Fourth Box
+ 
+    if (playerElement.parentElement === fourthbox && playerBackgroundColor === `rgb(62, 113, 244)`) {
+        nethTier.innerText = "HT4";
+    } else if(playerElement.parentElement === fourthbox && playerBackgroundColor === `rgb(135, 206, 250)`){
+        nethTier.innerText = "LT4";
+    }
+//       Fifth Box
+
+    if (playerElement.parentElement === fifthbox && playerBackgroundColor === `rgb(62, 113, 244)`) {
+        nethTier.innerText = "HT5";
+    } else if(playerElement.parentElement === fifthbox && playerBackgroundColor === `rgb(135, 206, 250)`){
+        nethTier.innerText = "LT5";
+    }
+
+//      Sixth Box
+ 
     crystalTier.innerText = "HT1";
     swordTier.innerText = "HT3";
     uhcTier.innerText = "";
@@ -31,14 +78,14 @@ const displayPlayerDetails = (playerName) => {
 players.forEach(player => {
     player.addEventListener("click", function() {
         const playerName = player.querySelector('.playername').innerText;
-        displayPlayerDetails(playerName);
+        displayPlayerDetails(playerName, player);
     });
 });
 
 lowplayers.forEach(lowplayer => {
     lowplayer.addEventListener("click", function() {
         const playerName = lowplayer.querySelector('.playername').innerText;
-        displayPlayerDetails(playerName);
+        displayPlayerDetails(playerName, lowplayer);
     });
 });
 
@@ -50,7 +97,7 @@ searchInput.addEventListener("keydown", function(event) {
         players.forEach(player => {
             const playerName = player.querySelector('.playername').innerText.toLowerCase();
             if (playerName === searchValue) {
-                displayPlayerDetails(player.querySelector('.playername').innerText);
+                displayPlayerDetails(player.querySelector('.playername').innerText, player);
                 playerFound = true;
             }
         });

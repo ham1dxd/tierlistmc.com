@@ -177,7 +177,7 @@ body {
  .lowplayers {
    width: 100%;
    height : 4vmin;
-   background-color: lightskyblue;
+   background-color: rgb(135, 206, 250);
    border-bottom: 1px solid black;
    display: flex;
    align-items: center;
