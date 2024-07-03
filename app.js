@@ -65,13 +65,7 @@ const displayPlayerDetails = (playerName, playerElement) => {
     }
 
 //      Sixth Box
- 
-    crystalTier.innerText = "HT1";
-    swordTier.innerText = "HT3";
-    uhcTier.innerText = "";
-    axeTier.innerText = "";
-    smpTier.innerText = "LT2";
-    potTier.innerText = "HT2";
+
     playerid.innerText = playerName;
 };
 
