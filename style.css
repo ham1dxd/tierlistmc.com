@@ -69,7 +69,7 @@ body {
 
 .middle {
     height: 200vh;
-    width: 202vh;
+    width: 202vmin;
     background-color: #1a1a1a;
     align-items: center;
     display: flex;
