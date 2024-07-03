@@ -94,6 +94,18 @@ searchInput.addEventListener("keydown", function(event) {
                 displayPlayerDetails(player.querySelector('.playername').innerText, player);
                 playerFound = true;
             }
+        
+           
+        });
+
+        lowplayers.forEach(lowplayer => {
+            const playerName = lowplayer.querySelector('.playername').innerText.toLowerCase();
+            if (playerName === searchValue) {
+                displayPlayerDetails(lowplayer.querySelector('.playername').innerText, lowplayer);
+                playerFound = true;
+            }
+        
+           
         });
 
         if (!playerFound) {
