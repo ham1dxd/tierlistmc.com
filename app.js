@@ -17,6 +17,8 @@ const secondbox = document.getElementById("2ndbox");
 const thirdbox = document.getElementById("3rdbox");
 const fourthbox = document.getElementById("4thbox");
 const fifthbox = document.getElementById("5thbox");
+const tiers = document.querySelector(".t")
+const gamemode =document.querySelector(".gamemode")
 
 const displayPlayerDetails = (playerName, playerElement) => {
     firstskill.style.display = "flex";
@@ -67,6 +69,9 @@ const displayPlayerDetails = (playerName, playerElement) => {
 //      Sixth Box
 
     playerid.innerText = playerName;
+    if (tiers.innerText !== " ") {
+        gamemode.style.backgroundColor = "#a177ff"
+    }
 };
 
 players.forEach(player => {

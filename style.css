@@ -322,7 +322,7 @@ body {
 }
 
 .timg {
-   height: 7vmin;
+   height: 8vmin;
    width: 7vmin;
 background-color:#343434 ;
   padding-top: 1vmin;
@@ -339,7 +339,7 @@ background-color:#343434 ;
 .gamemode {
    margin-top: 0.5vmin;
    margin-bottom: 0.5vmin;
-   background-color: #a177ff;
+background-color:#343434 ;
 }   
 
 .maintiers {
@@ -384,7 +384,7 @@ background-color:#343434 ;
    background-color: #4d4d4d;
    margin-top: 4vmin;
    height: 8vmin;
-   width: 13vmin;
+   width: 100vmin;
    border-radius: 1vmin;
    margin-left: 0.2vmin;
    margin-right: 0.2vmin;
@@ -397,7 +397,7 @@ background-color:#343434 ;
 
 #planet {
 
-   color: grey;
+   color: #808080;
    opacity: 70%;
    font-size: 5vmin;
    margin-left: 2vmin;
@@ -408,3 +408,9 @@ background-color:#343434 ;
       height: 10vmin;
       width: 15vmin;
    }
+
+#infomode {
+   font-size: 5vmin;
+   color: white;
+   font-weight: bolder;
+}
