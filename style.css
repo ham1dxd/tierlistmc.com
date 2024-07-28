@@ -1,416 +1,466 @@
 * {
-   margin: 0;
-   padding: 0;
+    margin: 0;
+    padding: 0;
+    background-color:#111418;
+    font-family: roboti;
+}
+@font-face {
+    font-family: roboti;
+    src: url(fonts/Roboto-Regular.ttf);
 }
 
-body {
-    background-color: #1a1a1a;
-    font-family: playerfont;
+html {
+    scroll-behavior: smooth;
 }
 
-.container {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction:column;
+a {
+    text-decoration: none;
 }
+
 .top {
     display: flex;
-    height: 7vmin;
-    width: 210vmin;
-    background-color: #262626;
+    flex-direction: row;
+    width: 100%;
 }
 
-#topmsg {
-    color: grey;
-    align-self: center;
-    display: flex;
-    margin-left: 23vmin;
-    font-size: 3vmin;
-    padding: 68vmin;
-}
-
-#search {
-   height: 5vmin;
-   align-self: center;
-   background-color: #343434;
-   width: 20vmin;
-   background: transparent;
-   font-size: 2.5vmin;
-   float: right;
-   outline: none;
-   border: none;
-   color: #fff;
-}
-
-.search {
-    height: 5vmin;
-    align-self: center;
-    display: flex;
-    background-color: #343434;
-    width: 25vmin;
-    border-radius: 50vmin;
-    cursor: text;
-}
-
-.search:hover {
-    background-color: #343434; /* Change background color on hover */
-}
-.search:click {
-    outline: auto;
-}
-
-#icon {
-    height: 3vmin;
-    width: 4vmin;
-    margin-top: 1vmin;
+.topa {
+    margin-inline: 25px;
     color: #fff;
+    font-style: normal;
+    text-decoration: none;
+    justify-self: center;
+}
+
+.links {
+    margin-top: 8vmin;
+    justify-content: center;
+    margin-right: 10vmin;
+}
+
+#btn1 {
+    height: 6vmin;
+    width: 13vmin;
+    background-color: purple;
+    margin-top: 6vmin;
+    border-radius: 4px;
+    border: none;
+    box-shadow: none;
+    color:aliceblue;
+    font-size: 2vmin;
+    margin-left: 23.5vmin;
+    cursor: pointer;
+}
+
+#logo1 {
+    margin-left: 15vmin;
+    margin-right: 30vmin;
 }
 
 .middle {
-    height: 200vh;
-    width: 202vmin;
-    background-color: #1a1a1a;
+    margin-top: 10vmin;
+    margin-left: 23vmin;
+}
+
+#small-msg {
+    color:aliceblue ;
+    font-size: 15px;
+}
+
+#big-text {
+    color: #fff;
+    margin-top: 2.5vmin;
+}
+
+#paragraph {
+    margin-top: 2vmin;
+    color: aliceblue;
+}
+
+#working-guy {
+    height: 50vmin;
+    float: right;
+    margin-right: 37vmin;
+}
+
+#midtop {
+    display: flex;
+    flex-direction: row;
+}
+
+#btn2 {
+    height: 6vmin;
+    width: 17vmin;
+    background-color: purple ;
+    margin-top: 4vmin;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    box-shadow: none;
+    color:aliceblue;
+    font-size: 2vmin
+}
+
+
+
+#pricing {
+    margin-top: 20vmin;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-head {
+    color: #fff;
+    font-size: 6vmin;
+    height: 4.5vmin;
+    display: flex;
+    justify-content: center;
+}
+
+.headin {
+    display: flex;
     align-items: center;
+    flex-direction: column;
+}
+
+#pricedivs {
+    margin-top: 7vmin;
+    display: flex;
+    margin-left: 3.5vmin;
+    justify-content: center;
+}
+
+.dollars {
+    height: 65vmin;
+    width: 50vmin;
+    background-color: #242423;
+    border-radius: 10px;
+    position: relative;
+    margin-inline: 3vmin;
+    border: 2px solid transparent;
+    transition: ease 0.3s;
+}
+
+.dollars:hover {
+    border-color: #fff;
+    background-color: #393E41;
+}
+
+.plan-massege {
+    background: transparent;
+    color: aliceblue;
+    margin-left: 3vmin;
+    margin-top: 6vmin;
+    font-size: 2.7vmin;
+    font-weight: bold;
+}
+
+.dollar-price {
+    background: transparent;
+    color: #fff;
+    margin-left: 3vmin;
+    margin-top: 1.8vmin;
+}
+
+.horline {
+    width: 92%;
+    margin-left: 4%;
+}
+
+.list {
+    margin-top: 4vmin;
+    background: transparent;
+    margin-left: 5vmin;
+    height: 200px;
+}
+
+.listitem {
+    background: transparent;
+    color:aliceblue;
+}
+
+.join {
+    background-color: transparent;
+    border-radius: 3px;
+    width: 30vmin;
+    height: 6vmin;
+    background: transparent;
+    border: 1px solid white;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    bottom: 0;
+    line-height: 50%;
+}
+
+
+.joins {
+    display: flex;
+    justify-content: center;
+    background:transparent;
+    bottom: 0;
+    align-items: center;
+    line-height: 50%;
+}
+
+.join:hover {
+    background-color: purple;
+    border:1px solid transparent;
+}
+
+.planmsg {
+    color: aliceblue;
+    opacity: 70%;
+
+}
+
+.planmsg2 {
+    color: aliceblue;
+
+    opacity: 70%;
+}
+
+.btn {
+    transition: ease 0.3s;
+}
+
+.btn:hover {
+    opacity: 85%;
+}
+
+.projects {
+    margin-top: 20vmin; 
+}
+
+.threeproj {
+    display: flex;
+    justify-content: center;
+    margin-top: 3vmin;
+    margin-left: 2vmin;
+}
+
+.project {
+    height: 30vmin;
+    width: 50vmin;
+    background-color: #242423;
+    border-radius: 10px;
+    margin-inline: 3vmin;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#proj1 {
+    background-image: url(images/tierlistmc\ -\ Copy.PNG);
+    background-size: cover;
+}
+
+#proj2 {
+    background-image: url(images/new\ port.PNG);
+    background-size: cover;
+}
+
+.project:hover {
+    border-color: #fff;
+}
+
+
+.slider {
+    width: 70%;
+    height: 500px;
+    box-shadow: 0px 0px 3px #fff;
+    margin-left: 15%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    position: absolute;
+}
+
+.nav {
+    align-items: center;
+    bottom: 5vmin;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    margin-top: 2vmin;
+    margin-bottom: 10vmin;
+    margin-left: 46.5%;
+}
+
+.nav button {
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    font-size: 50px;
+    text-align: center;
+    line-height: 50px;
+    border: none;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.nav button:hover {
+    opacity: 50%;
+}
+
+.end {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 80px;
+}
+
+#loream {
+    color: aliceblue;
+    margin-left: 7vmin;
+}
+
+#medialinks {
+   margin-top: 20px;
+   margin-left: 7vmin;
+   display: flex;
+   gap: 1rem;
+}
+
+.mediaimg {
+    border: 1px solid aliceblue;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.column {
     display: flex;
     flex-direction: column;
 }
 
-.up {
-    background-color: #1a1a1a;
-    width: 195vh;
-    height: 18vh;
+.secondend {
     display: flex;
+    gap: 10vmin;
+    margin-left: 200px;
+    margin-top: 35px;
 }
 
-.down {
-    background-color: #333333;
-    width: 195vh;
-    height: 340vh;
-    border-radius: 2vmin;
-}
-
-.tierheading {
-    width: 195vh;
-    height: 13vh;
-    display: flex;justify-content: center;
-}
-
- .tier {
-    font-family: tierfont ;
-    font-size: 6vh;
-    margin-top: 2vh;
-    padding-left: 10vh;
-    padding-right: 10vh;
-    font-weight: bolder;
-    display: flex;
- }
-
-/* Tier Colors */
- #tier1 {
-    color: orange;
- }
-
- #tier2 {
+.column h4 {
     color: white;
- }
-
- #tier3 {
-    color: coral;
- }
-
- #tier4 {
-    color: darkgray;
- }
-
- #tier5 {
-    color: grey;
- }
-
- @font-face {
-    font-family: tierfont ;
-    src: url(LEMONMILK-Regular.otf);
- }
-
- @font-face {
-   font-family: playerfont ;
-   src: url(Roboto-Regular.ttf);
+    margin-bottom: 25px;
 }
 
- .tierbox {
-    background-color: #272727;
-    height: 175vh;
-    width: 37vh ;
- }
+.column a{
+    color: aliceblue;
+    font-size: 15px;
+    margin-bottom: 12px;
+    opacity: 70%;
+}
 
- .tierbox1 {
-    margin-left: 3vh;
-    background-color: #272727;
-    height: 175vh;
-    width: 37vh ;
- }
- 
- .line {
-    background-color: grey;
-    height: 175vh;
-    width: 1vh;
- }
+#endp{
+    margin-bottom: 20px ;
+    margin-left: 5%;
+    color: aliceblue;
+    opacity: 55%;
+}
 
- .boxes {
+@media screen and (max-width: 900px)
+{
+  #working-guy {
+    float: right;
+  }
+
+  #btn1 {
+    display: none;
+  }
+
+  #pricedivs{
     display: flex;
- }
+    flex-direction: column;
+    align-items: center;
+  }
 
- .players {
-   width: 100%;
-   height : 4vmin;
-   background-color: #3e71f4;
-   border-bottom: 1px solid black;
-   display: flex;
-   align-items: center;
-   cursor: pointer;
- }
+  .secondend{
+    margin-left: 10%;
+  }
 
- .players:hover {
-   opacity: 85%;
- }
+  .end{
+    flex-direction: column;
+    margin-left: 0px;
+  }
 
- .lowplayers {
-   width: 100%;
-   height : 4vmin;
-   background-color: rgb(135, 206, 250);
-   border-bottom: 1px solid black;
-   display: flex;
-   align-items: center;
-   cursor: pointer;
- }
-
- .lowplayers:hover {
-   opacity: 85%;
- }
-
- .playername {
-   font-family: playerfont;
-   font-size: 3.5vmin;
-   color: #262626;
-   margin-left: 1vmin;
- }
-
- .colorbox {
-   background-color: greenyellow;
-   height: 100%;
-   width: 1vmin;
- }
-
-.hiddendivs {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   position: relative;
-}
-
-
- .skills {
-   height: 100vmin;
-   width: 80vmin;
-   background-color: #333333 ;
-   border-radius: 5vmin;
-   font-size: 5vmin;
+  .middle{
+    margin-left: 5%;
+  }
+  
+  .section-head {
    display: none;
-   position: absolute;
-   transform: translate(50%, 50%); /* Offsets for perfect centering */
-   margin-right: 80vmin;
-   align-items: center; 
-   justify-content: center;
-   flex-direction: column;
-   overflow: hidden;
- }
+  }
 
-.innerskill {
-   height: 70vmin;
-   width: 70vmin;
-   background-color: #272727;
-   margin-top: 20vmin;
-   border-radius: 3vmin ;
-   margin-bottom: 2vmin;
-} 
+  .headin {
+    display: none;
+  }
 
-.playerid {
-   font-size: 4.5vmin;
-   font-weight: bolder;
-   color: #fff;
-   margin-top: 4vmin;
-   margin-left: 2.3vmin;
-}
+  .planmsg{
+    margin-right: 90%;
+    font-size: 70%;
+  }
 
-.horline {
-   width: 93%;
-   margin-left: 3.5%;
-   margin-top: 1vmin;
-}
+  .planmsg2{
 
-.firsttiers {
-   height: 45%;
-   width: 30%;
-   margin-left: 1.5vmin;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
-}
+    font-size: 65%;
+  }
 
-#nethpot {
-   display: flex;
-   width: 98%;
-   border-radius: 3vmin;
-   height: 30%;
-   overflow: hidden;
-   font-weight: bolder;
-}
+  .slider {
+    height: 200px;
+    margin-right: 10%;
+  }
 
-#crystal {
-   display: flex;
-   width: 98%;
-   border-radius: 3vmin;
-   height: 30%;
-   overflow: hidden;
-   font-weight: bolder;
-}
+  .dollars {
+    height: 80vmin;
+    width : 50vmin;
+    margin-top: 5vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
 
-#sword {
-   display: flex;
-   width: 98%;
-   border-radius: 3vmin;
-   height: 30%;
-   overflow: hidden;
-   font-weight: bolder;
-}
+  #logo1 {
+    margin-right: 5vmin;
+    margin-left: 5%;
+  }
 
-#axe {
-   display: flex;
-   width: 98%;
-   border-radius: 3vmin;
-   height: 30%;
-   overflow: hidden;
-   font-weight: bolder;
-}
+  .join {
+  margin-top: 0px;
+  }
 
-#diapot {
-   display: flex;
-   width: 98%;
-   border-radius: 3vmin;
-   height: 30%;
-   overflow: hidden;
-   font-weight: bolder;
-}
+  .links {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+  }
 
-#uhc {
-   display: flex;
-   width: 98%;
-   border-radius: 3vmin;
-   height: 30%;
-   overflow: hidden;
-   font-weight: bolder;
-}
+  #dollar3 {
+    height: 70vmin ;
+  }
+}  
 
-#smp {
-   display: flex;
-   width: 98%;
-   border-radius: 3vmin;
-   height: 30%;
-   overflow: hidden;
-   font-weight: bolder;
-}
+@media screen and (max-width: 1100px)
+ {
+    .links {
+        margin-right: 0px;
+        margin-left: 0px;
+        float: right;
+        display: flex;
+    }
 
-.timg {
-   height: 8vmin;
-   width: 7vmin;
-background-color:#343434 ;
-  padding-top: 1vmin;
-  padding-bottom: 1vmin;
-  padding-left: 0.5vmin;
-  padding-right: 0.5vmin;
-}
-
-.t {
-   padding: 1.5vmin;
-   font-size: 5vmin;
-}
-
-.gamemode {
-   margin-top: 0.5vmin;
-   margin-bottom: 0.5vmin;
-background-color:#343434 ;
-}   
-
-.maintiers {
-   display: flex;
-}
-
-.upskill {
-   height: 15vmin;
-   width: 100%;
-   background-color: #4d4d4d;
-}
-
-.skin {
-   height: 25vmin;
-   margin-top: 3vmin;
-   margin-left: 2vmin;
-   border-radius: 15vmin;
-   background-color:  #272727;
-   padding-top: 1vmin;
-}
-
-#close {
-   height: 7vmin;
-   width: 7vmin;
-   font-size: 6vmin;
-   border-radius: 50vmin;
-   float: right;
-   margin: 2vmin;
-   border: none;
-   background-color: #666666;
-   color: #4d4d4d;
-}
-
-#close:hover {
-   opacity: 60%;
-}
-
-.modehead {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   background-color: #4d4d4d;
-   margin-top: 4vmin;
-   height: 8vmin;
-   width: 100vmin;
-   border-radius: 1vmin;
-   margin-left: 0.2vmin;
-   margin-right: 0.2vmin;
-}
-
-.topimg {
-   height: 6vmin;
-   width: 6vmin;
-}
-
-#planet {
-
-   color: #808080;
-   opacity: 70%;
-   font-size: 5vmin;
-   margin-left: 2vmin;
-   }
-
-
-   #innerheadimage {
-      height: 10vmin;
-      width: 15vmin;
-   }
-
-#infomode {
-   font-size: 5vmin;
-   color: white;
-   font-weight: bolder;
+    #projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    .nav {
+    margin-right: 40%;
+    }
 }
