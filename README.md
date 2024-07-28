@@ -1,1 +1,0 @@
-# tierlistmc.com
