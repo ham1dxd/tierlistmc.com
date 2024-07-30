@@ -460,4 +460,8 @@ a {
     .nav {
     margin-right: 40%;
     }
+
+     #btn1 {
+      display : none; 
+     }    
 }
